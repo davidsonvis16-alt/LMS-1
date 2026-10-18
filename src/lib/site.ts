@@ -8,6 +8,8 @@ export const SITE = {
   whatsapp: "254725009705",
   url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
   passMark: 80,
+  /** Shown wherever a course has no certificate fee set yet. */
+  certPriceRange: "US$50–100",
 };
 
 export const CATEGORIES = [

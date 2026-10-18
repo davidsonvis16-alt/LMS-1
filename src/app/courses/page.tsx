@@ -58,7 +58,7 @@ export default async function CoursesPage() {
                         <div><dt>Modules</dt><dd>{mods}</dd></div>
                         <div><dt>Questions</dt><dd>{n(c.questions)}</dd></div>
                         <div><dt>Learning</dt><dd className="gtext">Free</dd></div>
-                        <div><dt>Certificate</dt><dd>{c.certificate_price_usd != null ? usd(c.certificate_price_usd) : "Price on request"}</dd></div>
+                        <div><dt>Certificate</dt><dd>{c.certificate_price_usd != null ? usd(c.certificate_price_usd) : SITE.certPriceRange}</dd></div>
                         <div className="go" style={{ border: 0 }}><span className="link" aria-hidden="true">View course <Icon name="arrow" /></span></div>
                       </dl>
                     </li>

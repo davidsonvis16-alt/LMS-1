@@ -36,7 +36,7 @@ export default async function CoursePage({ params }: Props) {
   }
   const slides = c.slide_count > 0 ? modules.reduce((n, m) => n + pagesOf(m).length, 0) : 0;
   const qCount = c.questions?.[0]?.count ?? 0;
-  const price = c.certificate_price_usd != null ? usd(c.certificate_price_usd) : "On request";
+  const price = c.certificate_price_usd != null ? usd(c.certificate_price_usd) : SITE.certPriceRange;
   const cats = [...new Set([c.category, ...(c.categories ?? [])])].map(catLabel).join(" / ");
 
   const start = (block?: boolean) => (

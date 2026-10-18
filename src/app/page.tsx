@@ -27,7 +27,7 @@ const plural = (k: number, w: string) => `${k} ${w}${k === 1 ? "" : "s"}`;
 const cats = (c: Row) => [...new Set([c.category, ...(c.categories ?? [])])].map(catLabel).join(" / ");
 
 const FAQ = [
-  ["Is it really free to learn?", "Yes. Every module, slide and knowledge check is free. You only pay if you pass the final assessment and want your certificate."],
+  ["Is it really free to learn?", "Yes. Every module, slide and knowledge check is free. You only pay if you pass the final assessment and want your certificate, which costs between US$50 and US$100 depending on the course."],
   ["What do I need to pass?", `Score ${SITE.passMark}% or more on the final assessment. If you fall short, review the modules and try again. There is no limit on retakes.`],
   ["How do I pay for my certificate?", "Pay by M-Pesa in KES, or by Visa or Mastercard in USD. Your certificate is issued as soon as the payment is confirmed."],
   ["How does an employer check a certificate?", "Every certificate carries a unique number and a QR code. Scan it, or enter the number on our Verify page, and it is checked against our records."],

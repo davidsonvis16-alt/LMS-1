@@ -37,7 +37,6 @@ export function SiteFooter(_: { dark?: boolean }) {
             <ul>
               <li><a href={SITE.phoneHref}>{SITE.phone}</a></li>
               <li><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
-              {SITE.websites.map((w) => <li key={w.href}><a href={w.href} target="_blank" rel="noopener">{w.label}</a></li>)}
             </ul>
           </div>
         </div>

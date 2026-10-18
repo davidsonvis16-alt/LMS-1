@@ -250,7 +250,6 @@ export default async function Home() {
                 <a href={SITE.phoneHref}><span className="micro">Call</span><b>{SITE.phone}</b></a>
                 <a href={`https://wa.me/${SITE.whatsapp}`} target="_blank" rel="noopener"><span className="micro">WhatsApp</span><b>{SITE.phone}</b></a>
                 <a href={`mailto:${SITE.email}`}><span className="micro">Email</span><b>{SITE.email}</b></a>
-                {SITE.websites.map((w) => <a key={w.href} href={w.href} target="_blank" rel="noopener"><span className="micro">Website</span><b>{w.label}</b></a>)}
               </div>
             </div>
             <div className="contact-form form-card">
